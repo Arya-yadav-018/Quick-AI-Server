@@ -1,6 +1,7 @@
 import { featurePermission } from "../config/featurePermission.js";
-const Auth = (feature)=>{
-return async (req, res, next)=> {
+
+const Auth = (feature)=>{ 
+    return async (req, res, next)=> {
   
 const { userId, sessionClaims} = await req.auth();
   // 1. Is user logged in?   
@@ -25,15 +26,12 @@ if(!allowedFeatures.includes(feature)){
     })
 }
 
- req.plan = plan;
+req.plan = plan;
 req.userId = userId;
 
 next();
 
 }
-  
 
 };
-
-
 export default Auth

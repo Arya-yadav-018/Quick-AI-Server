@@ -37,7 +37,7 @@ prompt: String,
 articleTopic : String,
 articleLength : {
     type: String,
-    enum : ['Short' , 'medium' , 'long']
+    enum : ['short' , 'medium' , 'long']
 },
 
 //title generator

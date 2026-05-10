@@ -10,8 +10,6 @@ import aiRoute from "./routes/airoute.js"
 import connectCloudinary from './config/cloudinary.js';
 //dotenv.config();
 
-
-
 const app = express();
 await connectCloudinary()
 
